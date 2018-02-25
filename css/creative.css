@@ -19,14 +19,14 @@ hr.light {
 }
 
 a {
-  color: #F05F40;
+  color: #d191a7;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: #d191a7;
 }
 
 h1,
@@ -39,11 +39,11 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: #b4d7cd !important;
 }
 
 .bg-dark {
-  background-color: #212529 !important;
+  background-color: #b4d7cd !important;
 }
 
 .text-faded {
@@ -97,7 +97,7 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-  color: #f05f40;
+  color: #000f4d;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link,
@@ -154,7 +154,7 @@ img::-moz-selection {
     color: #F05F40;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f05f40;
+    color: #000f4d;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -298,13 +298,13 @@ header.masthead p {
 }
 
 .btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
+  background-color: #b4d7cd;
+  border-color: #b4d7cd;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #ee4b28 !important;
+  background-color: #d191a7 !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
