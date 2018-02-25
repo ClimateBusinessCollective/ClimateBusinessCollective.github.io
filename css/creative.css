@@ -14,12 +14,16 @@ hr {
   border-color: #d191a7;
 }
 
-hr.light {
+hr.pink {
   border-color: #d191a7;
 }
 
-hr.dark {
+hr.yellow {
   border-color: #f0e6c6;
+}
+
+hr.green {
+  border-color: #b4d7cd;
 }
 
 hr.blue {
@@ -98,7 +102,7 @@ img::-moz-selection {
 
 #mainNav {
   border-bottom: 1px solid rgba(33, 37, 41, 0.1);
-  background-color: #343a40;
+  background-color: #212529;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -121,7 +125,7 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  color: #f0e6c6;
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
