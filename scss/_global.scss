@@ -12,18 +12,26 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: $primary;
+  border-color: $cbc-pink;
 }
 
 hr.light {
-  border-color: $white;
+  border-color: $cbc-pink;
+}
+
+hr.dark {
+  border-color: $cbc-yellow;
+}
+
+hr.blue {
+  border-color: $cbc-blue;
 }
 
 a {
-  color: $primary;
+  color: $cbc-yellow;
   @include transition-all;
   &:hover {
-    color: darken($primary, .1);
+    color: darken($cbc-yellow, .1);
   }
 }
 
@@ -37,15 +45,23 @@ h6 {
 }
 
 .bg-primary {
-  background-color: $primary !important;
+  background-color: $cbc-green !important;
+}
+
+.bg-secondary {
+  background-color: $cbc-pink !important;
 }
 
 .bg-dark {
-  background-color: $gray-900 !important;
+  background-color: $cbc-blue !important;
 }
 
 .text-faded {
   color: fade-out($white, .3);
+}
+
+.text-faded-on-light {
+  color: fade-out($cbc-blue, .3);
 }
 
 section {

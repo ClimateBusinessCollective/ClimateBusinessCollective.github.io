@@ -1,6 +1,6 @@
 // Bootstrap overrides for this template
 .text-primary {
-  color: $primary !important;
+  color: $cbc-green !important;
 }
 
 .btn {
@@ -16,16 +16,16 @@
 }
 
 .btn-primary {
-  background-color: $primary;
-  border-color: $primary;
+  background-color: $cbc-pink;
+  border-color: $cbc-pink;
   &:hover,
   &:focus,
   &:active {
     color: $white;
-    background-color: darken($primary, 5%) !important;
+    background-color: darken($cbc-green, 5%) !important;
   }
   &:active,
   &:focus {
-    box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
+    box-shadow: 0 0 0 0.2rem lighten($cbc-green, 5%) !important;
   }
 }
