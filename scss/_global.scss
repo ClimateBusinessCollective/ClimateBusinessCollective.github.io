@@ -5,13 +5,15 @@ html {
   height: 100%;
 }
 
-body {
-  @include serif-font;
+// Typography
+.text-white-75 {
+  color: fade-out($white, .25);
 }
 
-hr {
-  max-width: 50px;
-  border-width: 3px;
+// Custom horizontal rules
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
   border-color: $cbc-pink;
 }
 
@@ -30,22 +32,15 @@ hr.green {
 hr.blue {
   border-color: $cbc-blue;
 }
+hr.light {
+  border-color: $white;
+}
 
 a {
   color: $cbc-yellow;
-  @include transition-all;
   &:hover {
     color: darken($cbc-yellow, .1);
   }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include sans-serif-font;
 }
 
 .bg-primary {
@@ -54,6 +49,10 @@ h6 {
 
 .bg-secondary {
   background-color: $cbc-pink !important;
+}
+
+.bg-yellow {
+  background-color: $cbc-yellow !important;
 }
 
 .bg-dark {
@@ -68,32 +67,38 @@ h6 {
   color: fade-out($cbc-blue, .3);
 }
 
-section {
+// Button restyling
+.btn {
+  font-family: $font-family-sans-serif;
+  color: fade-out($white, .3);
+}
+
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
+.btn-primary {
+  background-color: $cbc-pink;
+  border-color: $cbc-pink;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: darken($cbc-green, 5%) !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem lighten($cbc-green, 5%) !important;
+  }
+}
+
+
+// Page section padding
+.page-section {
   padding: 8rem 0;
-}
-
-.section-heading {
-  margin-top: 0;
-}
-
-::-moz-selection {
-  color: $white;
-  background: $gray-900;
-  text-shadow: none;
-}
-
-::selection {
-  color: $white;
-  background: $gray-900;
-  text-shadow: none;
-}
-
-img::selection {
-  color: $white;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: $white;
-  background: transparent;
 }
